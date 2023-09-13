@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceX clone</title>
+
+  <!--Font-->
+  <link href="assets/fonts/stylesheet.css" rel="stylesheet" />
+  <!--Main-style-->
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <!--Bootstrap CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!--Header-->
+  <header class="pt-3 bg-dark text-white sticky-top bg-black">
+    <div class="container-fluid">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand pe-4" href="index.html">
+          <img src="assets/images/spacex-logo.jpg" class="img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item pe-4 dropdown">
+              <a class="nav-link dropdown-toggle" aria-current="page" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                STARTSHIP
+              </a>
+              <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">View all</a></li>
+              </ul>
+            </li>
+            <li class="nav-item pe-4 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                MEN
+              </a>
+              <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Shirts</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Outer wear</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">View all</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item pe-4 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                WOMEN
+              </a>
+              <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Shirts</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Outer wear</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">View all</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                ACCESORIES
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item pe-4">
+              <a class="nav-link" aria-current="page" href="#">ACCOUNT</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#">SEARCH</a>
+            </li>
+
+            <li class="nav-item pe-4">
+              <a class="nav-link active" href="cart.html" tabindex="-1" aria-disabled="true">
+                CART (1)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--Main-->
+  <main class="mt-lg-5">
+    <div class="container-fluid">
+      <!--Row-->
+      <div class="row py-5">
+        <!--Product-Img-slider-->
+        <div class="col-md-6">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://shop.spacex.com/cdn/shop/products/MENS-SPACEXLOGO-HEATHERGRAY-BACK_800x.png?v=1668633545"
+                  class="d-block w-100 img-thumbnail" alt="t-shirt-white" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://shop.spacex.com/cdn/shop/products/MENS-SPACEX-T-SHIRT-BLACK-BACK_800x.png?v=1668633545"
+                  class="d-block w-100 img-thumbnail" alt="t-shirt-spaceX" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://shop.spacex.com/cdn/shop/products/KIDS-22-STARMAN-T-SHIRT-BLACK-FRONT_800x.png?v=1631677034"
+                  class="d-block w-100 img-thumbnail" alt="t-shirt-black" />
+              </div>
+            </div>
+            <a role="button" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a role="button" class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex flex-column py-3 gap-4 px-5">
+          <h3 class="text-uppercase font-weight-550">Men's SpaceX T-Shirt</h3>
+          <h4 class="font-weight-500">$30.00</h4>
+          <hr />
+          <div>
+            <h5 class="font-weight-550">Fabric Content:</h5>
+            <ul class="ps-3 text-secondary">
+              <li>Black: 100% Cotton</li>
+              <li>Gray Heather: 90% Cotton / 10% Polyester</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-secondary">Color: Gray</p>
+            <div class="d-flex gap-4">
+              <span class="rounded-4 bg-secondary p-3"></span>
+              <span class="rounded-4 bg-dark p-3"></span>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <label class="text-secondary">Size:</label>
+            <div class="QuantitySelector w-75 p-md-2">
+              <span class="ps-3 text-secondary">S</span>
+              <select class="QuantitySelector__CurrentQuantity ms-auto" value="">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <label class="text-secondary">Quantity:</label>
+            <div class="QuantitySelector w-25 justify-content-between">
+              <a class="QuantitySelector__Button Link Link--primary" href="#">
+                <svg class="Icon Icon--minus" role="presentation" viewBox="0 0 16 2">
+                  <path d="M1,1 L15,1" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                  </path>
+                </svg>
+              </a>
+
+              <input type="text" class="QuantitySelector__CurrentQuantity" value="1" />
+              <a class="QuantitySelector__Button Link Link--primary" href="#">
+                <svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16">
+                  <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                    <path d="M8,1 L8,15"></path>
+                    <path d="M1,8 L15,8"></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <button type="submit" class="ProductForm__AddToCart Button Button--primary Button--full bg-black w-75">
+            <span class="text-white">Add to cart</span>
+          </button>
+        </div>
+      </div>
+
+      <!--Recently Viewed-->
+      <hr />
+      <div class="container text-center">
+        <div class="row py-5">
+          <div class="col-md-12">
+            <h3>RECENTLY VIEWED</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="featureContent position-relative">
+              <div class="featuredHoveredImg">
+                <img src="assets/images/hover-1.webp" class="img-fluid" />
+              </div>
+              <div class="py-4">
+                <h4>SPACEX F9 MODEL</h4>
+                <p>$150.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--Footer-->
+  <footer class="container-fluid bg-black text-center text-white d-flex flex-column align-content-center py-3">
+    <img src="assets/images/spacex-logo.jpg" class="img-fluid align-self-center" />
+    <p>Copyright&copy; SpaceX. All rights reserved.</p>
+  </footer>
+  <!--Bootstrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
